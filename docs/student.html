@@ -1,1 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student • Sit / Settle / Start</title>
+  <link rel="stylesheet" href="./app.css" />
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <h1>Student</h1>
+
+  <div class="card">
+    <div class="row">
+      <label>Class</label>
+      <select id="classId">
+        <option value="classA">Class A</option>
+        <option value="classB">Class B</option>
+        <option value="classC">Class C</option>
+        <option value="classD">Class D</option>
+        <option value="classE">Class E</option>
+      </select>
+
+      <input id="label" placeholder="Name or Seat # (optional)" />
+      <button id="registerBtn" class="primary">Register this device</button>
+      <span id="regStatus" class="small"></span>
+    </div>
+
+    <div class="row">
+      <span class="badge">Device ID: <span id="deviceIdText">—</span></span>
+      <span class="badge">Active lesson: <span id="activeLessonText">—</span></span>
+      <span class="badge">Registration: <span id="regOpenText">—</span></span>
+    </div>
+  </div>
+
+  <div id="lessonArea" class="card" style="display:none;">
+    <h2>Questions</h2>
+    <div class="row">
+      <label>Question</label>
+      <select id="qSelect"></select>
+      <button id="clearBtn">Clear canvas</button>
+      <button id="saveBtn" class="primary">Save</button>
+      <span id="saveStatus" class="small"></span>
+    </div>
+
+    <div id="questionText" style="margin: 8px 0;"></div>
+
+    <div class="canvasWrap">
+      <canvas id="canvas" width="900" height="520"></canvas>
+      <div class="row">
+        <button id="penBtn" class="primary">Pen</button>
+        <button id="eraserBtn">Eraser</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./student.js"></script>
+</body>
+</html>
 
