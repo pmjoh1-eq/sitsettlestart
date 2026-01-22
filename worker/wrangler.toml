@@ -3,9 +3,9 @@ main = "src/index.js"
 compatibility_date = "2026-01-01"
 
 kv_namespaces = [
-  { binding = "KV", id = "PUT_YOUR_KV_NAMESPACE_ID_HERE" }
+  { binding = "KV", id = "16a8aa70e9104f2cbb010f91dfd6d5ae" }
 ]
 
 [vars]
 # Set this to a long random string. Teacher UI will ask for it.
-ADMIN_KEY = "CHANGE_ME_TO_A_RANDOM_SECRET"
+ADMIN_KEY = "Tolverne"
