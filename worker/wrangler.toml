@@ -6,6 +6,4 @@ kv_namespaces = [
   { binding = "KV", id = "16a8aa70e9104f2cbb010f91dfd6d5ae" }
 ]
 
-[vars]
-# Set this to a long random string. Teacher UI will ask for it.
-ADMIN_KEY = "Tolverne"
+
