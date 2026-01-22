@@ -1,5 +1,5 @@
 
-export const API_BASE = "https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev";
+export const API_BASE = "https://sss-canvas.pmjoh1.workers.dev";
 
 export function getDeviceId() {
   let id = localStorage.getItem("sss_deviceId");
