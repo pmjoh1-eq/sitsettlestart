@@ -1,1 +1,27 @@
+:root { font-family: system-ui, Arial, sans-serif; }
+body { margin: 0; padding: 16px; background: #0b0f14; color: #e8eef7; }
+a { color: #8fd3ff; }
+.card { background: #121a24; border: 1px solid #1e2a39; border-radius: 12px; padding: 12px; margin: 12px 0; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+input, select, textarea, button {
+  background: #0f1620; color: #e8eef7; border: 1px solid #2a3a4e; border-radius: 10px;
+  padding: 10px 12px; font-size: 14px;
+}
+button { cursor: pointer; }
+button.primary { background: #1c5d7a; border-color: #2a95c2; }
+.small { font-size: 12px; opacity: 0.8; }
+hr { border: none; border-top: 1px solid #223145; margin: 14px 0; }
+
+.canvasWrap { display: grid; gap: 8px; }
+canvas { background: #ffffff; border-radius: 12px; border: 1px solid #2a3a4e; touch-action: none; }
+
+.carousel {
+  display: flex; gap: 12px; overflow-x: auto; padding: 8px; scroll-snap-type: x mandatory;
+}
+.slide {
+  min-width: 360px; max-width: 360px; scroll-snap-align: start;
+  background: #121a24; border: 1px solid #1e2a39; border-radius: 12px; padding: 10px;
+}
+.slide img { width: 100%; border-radius: 10px; background: #fff; border: 1px solid #2a3a4e; }
+.badge { display: inline-block; padding: 4px 8px; border-radius: 999px; border: 1px solid #2a3a4e; font-size: 12px; opacity: 0.9; }
 
